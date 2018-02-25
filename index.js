@@ -18,7 +18,6 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  debugger;
   var c = cart;
   var intro = "In your cart, you have";
   var separator = "";
@@ -50,7 +49,6 @@ function viewCart() {
     output = output + ".";
   }
 
-  debugger;
   console.log(output);
 
 }

@@ -62,6 +62,8 @@ function total() {
   var tmpGroceryObj = {};
 
   while (c.length > 0) {
+    tmpGroceryObj = c.shift();
+    name = Object.keys(tmpGroceryObj).shift();
     totPrice += tmpGroceryObj[name];
   }
   return totPrice;

@@ -57,7 +57,12 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  var c = cart.slice(0,cart.length);
+  var totPrice = 0;
+  while (c.length > 0) {
+    totPrice += tmpGroceryObj[name];
+  }
+  return totPrice;
 }
 
 function removeFromCart(item) {

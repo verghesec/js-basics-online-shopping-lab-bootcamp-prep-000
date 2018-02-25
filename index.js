@@ -60,6 +60,7 @@ function total() {
   var c = cart.slice(0,cart.length);
   var totPrice = 0;
   var tmpGroceryObj = {};
+  var name = "";
 
   while (c.length > 0) {
     tmpGroceryObj = c.shift();

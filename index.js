@@ -28,7 +28,7 @@ function viewCart() {
   var price = 0;
   var tmpGroceryObj = {};
 
-  console.log(`cart length = ${c.length}`);
+  //console.log(`cart length = ${c.length}`);
   if ( c.length === 0 ) {
     console.log("Your shopping cart is empty.");
   }

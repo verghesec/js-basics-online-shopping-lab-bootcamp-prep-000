@@ -18,6 +18,7 @@ function addToCart(item) {
 }
 
 function viewCart() {
+  debugger;
   var c = cart;
   var intro = "In your cart, you have";
   var separator = "";

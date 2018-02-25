@@ -50,6 +50,7 @@ function viewCart() {
     output = output + ".";
   }
 
+  debugger;
   console.log(output);
 
 }

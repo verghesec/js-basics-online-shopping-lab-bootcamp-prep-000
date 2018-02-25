@@ -38,8 +38,11 @@ function viewCart() {
     }
     output = intro;
     while (c.length > 0) {
-      if ( (c.length === 1) && (cart.length > 1) ) {
-        final_prefix = " and";
+      if (c.length === 1) {
+        separator = "";
+        if (cart.length > 1) {
+           final_prefix = " and";
+        }
       }
       tmpGroceryObj = c.shift();
       name = Object.keys(tmpGroceryObj).shift();

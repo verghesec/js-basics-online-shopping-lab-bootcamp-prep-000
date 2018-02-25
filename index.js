@@ -18,7 +18,7 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  var c = cart;
+  var c = cart.slice(0,cart.length);
   var intro = "In your cart, you have";
   var separator = "";
   var final_prefix = ""
@@ -43,7 +43,7 @@ function viewCart() {
       }
       tmpGroceryObj = c.shift();
       name = Object.keys(tmpGroceryObj).shift();
-      price = tmpGroceryObj[name]
+      price = tmpGroceryObj[name];
       output = output + separator + final_prefix + " " + name + " at $" + price;
     }
     output = output + ".";

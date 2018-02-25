@@ -45,7 +45,7 @@ function viewCart() {
       tmpGroceryObj = c.shift();
       name = Object.keys(tmpGroceryObj).shift();
       price = tmpGroceryObj[name]
-      output = output + separator + final_prefix + " " + name + " at " + price;
+      output = output + separator + final_prefix + " " + name + " at $" + price;
     }
     output = output + ".";
   }
